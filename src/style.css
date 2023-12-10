@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.container {
+  padding: 0 16px;
+}
 .title {
   color: #000;
   font-family: Inter;
@@ -101,7 +104,8 @@
 .dli {
 }
 .inputChange {
-  width: 435px;
+  max-width: 450px;
+  width: 100%;
   height: 38px;
   flex-shrink: 0;
   padding-left: 14px;
@@ -112,7 +116,7 @@
 }
 .changeform {
   display: flex;
-
+  width: 100%;
   gap: 24px;
 }
 .delete,
@@ -175,6 +179,12 @@ button {
   max-height: 200px;
 }
 
+@media (max-width: 600px) {
+  .changeform {
+    padding-right: 51px;
+  }
+}
+
 @media (max-width: 590px) {
   .subtitle {
     font-size: 14px;
@@ -194,6 +204,13 @@ button {
     max-width: 200px;
     font-size: 12px;
   }
+  /* .inputChange {
+    max-width: 200px;
+    height: 38px;
+    flex-shrink: 0;
+    padding-left: 14px;
+    margin-left: 9px;
+  } */
 }
 @media (max-width: 415px) {
   .checkbox:checked ~ p {
